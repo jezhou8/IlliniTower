@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:illini_tower/screens/home/components/MenuBar.dart';
 import 'package:illini_tower/screens/home/components/profile.dart';
 import 'package:illini_tower/theme/colors.dart';
 
@@ -17,20 +18,7 @@ class CustomAppBar extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                IconButton(
-                  icon: Icon(Icons.menu, color: Colors.white),
-                ),
-                IconButton(
-                    icon: Icon(
-                  Icons.chat,
-                  color: Colors.white,
-                ))
-              ],
-            ),
+            MenuBar(),
             Profile(),
           ],
         ));
